@@ -108,7 +108,6 @@ blockchain = Blockchain()
 
 # Mining a new block
 @app.route('/mine_block', methods=['GET'])
-
 def mine_block():
     previous_block = blockchain.get_previous_block()
     previous_proof = previous_block['proof']
